@@ -1,0 +1,10 @@
+repositories:
+  - name: external-dns
+    url: https://kubernetes-sigs.github.io/external-dns
+releases:
+  - name: external-dns
+    namespace: devops
+    chart: external-dns/external-dns
+    version: 1.19.0
+    values:
+      - values.yaml
